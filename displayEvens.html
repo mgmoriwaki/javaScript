@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/JavaScript" src="displayEvens.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+</head>
+<body>
+    </br></br>
+    <div class="container" >
+        <h1>Display Evens</h1>
+        <form name="evens" onsubmit="return validateItems();" class="form-inline">
+            <div class="row">
+                <div class="form-group">
+                    <label for="StartingNumber">Starting Number</label>
+                    <input type="number" class="form-control" id="StartingNumber">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label for="EndingNumber">Ending Number</label>
+                    <input type="number" class="form-control" id="EndingNumber">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label for="Step">Step</label>
+                    <input type="number" class="form-control" id="Step">
+                </div>
+            </div> 
+            <div class="row">
+                <div class="form-group">
+                    <button type="submit" id="submitButton" class="btn">Submit</button>
+                </div>
+            </div> 
+
+        </form>
+        
+        </br></br>
+        
+    </div>
+    <table style="display:none;" id="results">
+        <tr>
+            <p id="evensMessage"></p>
+        </tr>
+        <tr>
+        <p id="evenNumbers"></p>
+        </tr>
+    </table>
+</body>
+</html>
